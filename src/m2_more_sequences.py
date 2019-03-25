@@ -108,7 +108,8 @@ def shortest_string(strings):
     # ------------------------------------------------------------------
     shortest = ''
     for k in range(len(strings)):
-        if len(strings[k + 1]) >
+        if len(strings[k]) > len(strings[k + 1]):
+            shortest = strings[k + 1]
 
 def run_test_index_of_largest_number():
     """ Tests the   index_of_largest_number   function. """
